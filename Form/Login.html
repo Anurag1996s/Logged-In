@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #a7ece7;
+            }
+
+            form {
+                background-color: white;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 20px;
+                width: 400px;
+                margin: 0 auto;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            <!--label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+                
+            }  -->
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                border: 3px solid #5f4848;
+                padding: 2px;
+                width: 90%;
+            }
+
+            button[type="submit"] {
+                background-color: #b514e6;
+               
+                font-size: 20px;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                
+                border-radius: 5px;
+                width: 93%;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+            button[type="submit"]:hover {
+                background-color: #0d23e7;
+            }
+    </style>
+
+    <form>
+        <h2>Please Login your Details</h2>
+        
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+       
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
